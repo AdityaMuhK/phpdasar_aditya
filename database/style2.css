@@ -1,0 +1,97 @@
+body, html {
+    height: 10%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Bold;
+  }
+  .card-body {
+    color: #fff;
+  }
+  
+  .bg {
+    background: url(https://media.tenor.com/IqJXhaROxM4AAAAd/sung-jin-woo-solo-leveling.gif);
+  
+    height: auto; 
+    width: auto;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg2 {
+    background: url(https://media.tenor.com/L1F3Wj_pc2EAAAAC/fire-black.gif);
+  
+    height: 100%; 
+    width: auto;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grad{
+    background: rgb(212,38,38);
+background: linear-gradient(227deg, rgba(212,38,38,1) 14%, rgba(0,0,0,0.8323704481792717) 85%);
+  }
+
+.glow-border {
+    border: 2px solid #6c757d; /* Warna border abu-abu */
+    border-radius: 10px; /* Sudut border */
+    box-shadow: 0 0 10px #6c757d, 0 0 20px #6c757d, 0 0 30px #6c757d, 0 0 40px #6c757d; /* Efek glow ungu */
+}
+/* Kustomisasi tampilan input */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ff0000; /* Warna garis bawah biru */
+    background-color: transparent;
+    outline: none;
+    transition: border-bottom 0.3s;
+    font-size: 16px;
+}
+
+/* Efek pada input ketika fokus */
+.input-container input:focus {
+    border-bottom: 2px solid #ffffff; /* Warna garis bawah merah saat fokus */
+}
+
+/* Kustomisasi label */
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Mencegah label menjadi interaktif */
+    transition: top 0.3s, font-size 0.3s;
+    font-size: 16px;
+}
+
+/* Label naik ketika input dalam fokus */
+.input-container input:focus ~ label {
+    top: -20px; /* Menggeser label ke atas */
+    font-size: 12px; /* Mengurangi ukuran label */
+    color: #ffffff; /* Warna label merah saat fokus */
+}
+/* Gaya tautan biasa */
+a {
+    color: #ff0000; /* Warna biru */
+    text-decoration: none; /* Menghapus garis bawah default */
+    transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+/* Efek hover */
+a:hover {
+    color: #ff6b6b; /* Warna merah saat hover */
+    text-decoration: none; /* Tetap tanpa garis bawah saat hover */
+}
+
+/* Tautan dengan gaya khusus */
+.unique-link {
+    font-weight: bold;
+    font-size: 18px;
+}

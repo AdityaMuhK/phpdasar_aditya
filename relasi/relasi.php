@@ -52,10 +52,15 @@ if ($conn->connect_error) {
                             <td><?= $row['gender'];?></td> 
                             <td><?= $row['tingkat_kelas'].''.$row['jurusan_kelas']; ?></td> 
                             <td><?= $row['nama_sekolah'].''.$row['alamat_sekolah'];?></td> 
+                            <td class="text-center">
+                                <a href="<?= 'detail.php?id='.$row['id_siswa']; ?>" class="btn btn-sm btn-primary">Detail</a>
+                                <button onclick="<?= 'hapus('.$row['id_siswa'].')'; ?>" class="btn btn-sm btn-danger">Delete</button>
+                            </td>
                         </tr> 
                         <?php endforeach; ?>      
                 </tbody>
         </table>
+        <a href="create.php" class="btn btn-sm btn-primary">Tambah</a>
     </div>
     <script>
     function hapus(id) {
